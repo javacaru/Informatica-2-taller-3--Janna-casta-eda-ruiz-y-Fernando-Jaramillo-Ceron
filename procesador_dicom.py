@@ -111,4 +111,12 @@ class ProcesadorDICOM:
 
     def mostrar_resumen(self) -> None:
         print("\n── Resumen del DataFrame ──────────────────────────────────")
-        print(self.df.to_string(index=False))
+        if self.df.empty:
+            print("No hay datos para mostrar.")
+            return
+        df_t = self.df.transpose()
+        for idx, row in df_t.iterrows():
+            print(f"{idx}:")
+            for col, val in row.items():
+                print(f"  {col}: {val}")
+            print("────────────────────────────────────────────────────────────")
