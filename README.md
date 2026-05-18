@@ -75,3 +75,5 @@ Umbrales elegidos: `th1 = 50`, `th2 = 150` (relación 1:3 recomendada por Canny)
 2. Importancia de las herramientas Python
 
 El ecosistema científico de Python (**pydicom, NumPy, Pandas, OpenCV**) permite construir en pocas líneas de código un flujo completo de ingesta, análisis y procesamiento de imágenes médicas que en otros lenguajes requeriría frameworks mucho más complejos. La interoperabilidad entre estas librerías (todas operan sobre arrays NumPy) facilita la integración y reduce la curva de aprendizaje, lo que resulta clave en entornos clínicos donde la validación y el mantenimiento del software son críticos.
+
+NOTA: Los archivos .dcm se los agrego de una base de datos de Kaggle
